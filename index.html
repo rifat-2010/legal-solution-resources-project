@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <!-- tailween css link -->
+    <!-- tailwind css link -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- right bracket icon link -->
     <link
@@ -22,13 +22,15 @@
     <!-- header section -->
     <header class="mx-auto">
       <!-- header-nav -->
-      <nav class="flex flex-row my-[70px] max-w-[1170px] gap-[135px] mx-auto">
+      <nav class="flex flex-row my-[70px] max-w-[1170px] gap-[135px] mx-auto  md: w-[100%]">
+        <div class="flex flex-row gap-[15px]">
         <img
           src="./images/business.png"
           alt="business-image"
           class="w-[44.62px] h-[44.4px]"
         />
         <h2 class="text-[35px] font-extrabold">Justice</h2>
+        </div>
         <ul class="flex flex-row gap-[30px] text-[#707070] cursor-pointer">
           <li class="flex items-center gap-1">Home</li>
           <li class="flex items-center gap-1">
@@ -54,8 +56,8 @@
 
       <!-- header-banner -->
       <div
-        class="bg-[url('./images/banner.png')] w-[1170px] h-[550px] flex flex-col justify-center items-center mx-auto gap-[25px] bg-gradient-to-bl from-black/80 to-transparent mb-[120px]"
-      >
+        class="bg-[url('./images/banner.png')] w-[100%] h-[550px] flex flex-col justify-center items-center mx-auto gap-[25px] bg-gradient-to-bl from-black/80 to-transparent mb-[120px] md:w-[100%]"
+      > 
         <h1 class="text-[72px] font-extrabold text-white text-center">
           We Provide Effective <br />Legal Solutions
         </h1>
@@ -82,15 +84,16 @@
 
     <main>
       <!-- main first and boxes banner -->
-      <h2 class="text-[40px] font-extrabold text-center">
+       <div class="grid justify-center">
+      <h2 class="text-[40px] font-extrabold text-center ">
         The Legal Practice Area
       </h2>
       <p class="max-w-[714px] text-[#707070] text-center mx-auto pt-[24px]">
         There are many variations of passages of Lorem Ipsum available, but the
         majority have suffered alteration in some form, by injected humour.
       </p>
-
-      <div class="grid grid-cols-3 mx-auto gap-[0px] max-w-[1170px]">
+</div>
+      <div class="grid grid-cols-3 justify-center gap-[0px] w-[100%] shadow-md">
         <div
           class="flex flex-col gap-[30px] w-[401px] h-[499px] justify-center items-center"
         >
@@ -329,7 +332,7 @@
       <div class="w-[1170px] h-[570px] mx-auto flex gap-[30px] mt-[64px] mb-[120px]">
         <div class="grid grid-cols-2">
           <div
-            class="flex flex-col justify-center items-center w-[285px] h-[285px] gap-[16px] bg-[#F3F3F3]"
+            class="flex flex-col justify-center items-center w-[285px] h-[285px] gap-[16px] bg-[#F3F3F3]  border-r-1 border-black border-b-1 border-black"
           >
             <img
               src="./images/address.png"
@@ -342,7 +345,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col justify-center items-center max-w-[285px] h-[285px] gap-[16px] bg-[#F3F3F3]"
+            class="flex flex-col justify-center items-center max-w-[285px] h-[285px] gap-[16px] bg-[#F3F3F3] border-b-1 border-black"
           >
             <img
               src="./images/call.png"
@@ -355,7 +358,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col justify-center items-center max-w-[285px] h-[285px] gap-[16px] bg-[#F3F3F3]"
+            class="flex flex-col justify-center items-center max-w-[285px] h-[285px] gap-[16px] bg-[#F3F3F3]  border-r-1 border-black"
           >
             <img
               src="./images/email.png"
@@ -371,11 +374,11 @@
             class="flex flex-col justify-center items-center max-w-[285px] h-[285px] gap-[16px] bg-[#F3F3F3]"
           >
             <img
-              src="./images/address.png"
+              src="./images/time.png"
               alt="address-icon"
               class="w-[40px] h-[40px]"
             />
-            <h3 class="text-[24px] font-bold">Address</h3>
+            <h3 class="text-[24px] font-bold">Working Hours</h3>
             <p class="max-w-[163px] text-[#707070]">
               Mon-Fri: 9AM to 5PM <br />Sunday: 9AM to 1 PM
             </p>
@@ -414,7 +417,7 @@
     </main>
 
         <!-- footer section -->
-         <footer class="bg-[#111111] w-[100%] h-[506px]">
+         <footer class="bg-[#111111] max-w-[1920px] h-[506px]">
             <div class="flex flex-row gap-[81px] pt-[110px] px-[150px]">
 
             <div class="flex flex-col gap-[32px]">
@@ -448,7 +451,7 @@
           <h2 class="text-[35px] font-extrabold text-[#FFF]">Contact Now</h2>
           <ul type="none" class=" text-[#CFCFCF] flex flex-col gap-[10px] w-[216px]">
             <li>555 4th 5t NW, Washington <br>
-                DC 20530, United States</li>
+              DC 20530, United States</li>
             <li>+88 01750 000 000 <br>
                 +88 01750 000 000</li>
             <li>info@gmail.com <br>
